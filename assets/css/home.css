@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima&family=Alata&family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Poppins:wght@300;500;700;800&family=Quicksand&family=Roboto:wght@500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --light-blue-color: rgb(0, 132, 255);
+  --light-color: #fff;
+  --grey-color: #f2f2f2;
+  --dark-color: #000;
+  --transition: all 300ms ease-in-out;
+}
+
+/* Class For Centering  */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Start Username Form */
+.maiContainer {
+  min-height: 100vh;
+  color: var(--dark-color);
+  background-color: var(--grey-color);
+}
+
+.wrapper {
+  background-image: url(../images/quizimage.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: var(--light-color);
+  /* width: 600px; */
+  width: 70%;
+  height: 580px;
+  border-radius: 1.5rem;
+  position: relative;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 10%);
+}
+
+.container {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  background-color: white;
+  width: 90%;
+  height: 200px;
+}
+.title {
+  text-align: center;
+  line-height: 2;
+
+  font-size: 1.5rem;
+}
+
+.message {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 4;
+  margin-bottom: 2rem;
+}
+
+.button2 {
+  border: none;
+  background-color: var(--light-blue-color);
+  padding: 16px 52px;
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: white;
+  border: 2px solid #0066aa;
+}
+
+.button2:hover {
+  background-color: white;
+  color: black;
+}
+
+/* End Username Form */
+
+/* Start Media Query */
+@media (max-width: 678px) {
+  .quiz-title {
+    font-size: 1.6rem;
+  }
+  .wrapper {
+    margin: 3rem 0;
+    width: 90%;
+    height: 90%;
+    padding: 1.5rem 1rem 3rem 1rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .quiz-foot button {
+    font-size: 1rem;
+  }
+}
+/* End Media Query */
